@@ -564,7 +564,7 @@ function sendEmail() {
 }
 function shareOnTwitter() {
     const seriesName = selectedSeries.charAt(0).toUpperCase() + selectedSeries.slice(1).replace(/([A-Z])/g, ' '); // Format series name
-    const scoreMessage = `Hi, I scored ${score}/10 on @Olympicbrainstorm in the ${seriesName} category quiz! Can you beat me?`;
+    const scoreMessage = `Hi, I scored ${score}/10 on @Olympbrainstorm in the ${seriesName} category quiz! Can you beat me?`;
     const twitterUrl = `https://twitter.com/intent/tweet?text=${encodeURIComponent(scoreMessage)}`;
     window.open(twitterUrl, '_blank');
 }
